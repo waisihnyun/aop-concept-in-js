@@ -20,6 +20,7 @@ let controller = {
     }
 }
 
+// AOP
 function securityAOP(controller) {
     for (let props in controller) {
         if (typeof controller[props] === 'function') {
